@@ -3,7 +3,7 @@ let b = 40
 
 // When you set any value with
 // let operator, you can 't set again with let
-// let b = 40 -> this generate a error
+// let b = 40 -> this throws a error
 
 var a = 30
 
