@@ -12,7 +12,6 @@ const client = {
     adress: {
         number: 123
     }
-
 }
 
 //  Point Notation
