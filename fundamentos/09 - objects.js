@@ -30,3 +30,16 @@ prod2 = {
 //  need of the quotes to represatation
 // link to search and validation https://jsonlint.com/
 '{"name":"Camisa","price":79.80}'
+
+
+//  objects are declared with :
+a = {
+    name: '',
+    b: ''
+}
+
+//  Or just 
+a = {}
+a['key'] = 'value'
+
+console.log(typeof a)
