@@ -56,10 +56,10 @@ console.log(note)
 
 function rand({ min = 0, max = 1000 }) {
     const value = Math.random() * (max - min) + min
-    return Math.floor
+    return Math.floor(value)
 }
 
-// console.log(rand({ max: 50, min: 40 }))
+console.log(rand({ max: 50, min: 40 }))
 
 const obj = { max: 50, min: 100 }
 console.log(rand(obj))
@@ -73,7 +73,7 @@ console.log(rand({}))
 
 //  you can't send nothing
 //  because it's doesn't understand 
-// console.log(rand())
+console.log(rand())
 
 // you can set standard value up
 // function rand({ min = 0, max = 1000 } = {}) {
@@ -83,14 +83,14 @@ console.log(rand({}))
 
 //  Part 4
 
-function rand([min = 0, max = 100]) {
-    if (min < max) [min, max] = [max, min]
-    const value = Math.random() * (max - min) + min
-    return Math.floor(valor)
-}
+// function rand([min = 0, max = 100]) {
+//     if (min < max) [min, max] = [max, min]
+//     const value = Math.random() * (max - min) + min
+//     return Math.floor(valor)
+// }
 
-console.log(rand([40, 50]))
-console.log(rand(992))
-console.log(rand([, 10]))
-console.log(rand([]))
+// console.log(rand([40, 50]))
+// console.log(rand(992))
+// console.log(rand([, 10]))
+// console.log(rand([]))
 // console.log(rand())  // this definition will throws error
