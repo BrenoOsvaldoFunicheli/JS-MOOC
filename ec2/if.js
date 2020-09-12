@@ -12,4 +12,4 @@ console.log(GoodNews(8))
 // Please note the same value in js represents booleand value
 // so you don't need put !!
 
-function isTrue()
+function isTrue(
