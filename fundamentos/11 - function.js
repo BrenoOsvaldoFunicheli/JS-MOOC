@@ -1,6 +1,6 @@
 // Função is a code block that do some thing
 
-console.log(typeof Object) // is a Object
+console.log(typeof Object) // is an Object
 
 function printSum(a, b) {
     console.log(a + b)

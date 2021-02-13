@@ -30,7 +30,7 @@ console.log(double(Math.PI))
 //  because when you use arrow function
 //  it preseves the lexical context
 //  and as the function was written into Person function
-//  the this value is fix
+//  the this value is fixs
 function Person() {
 
     //  here the variable years belong to object that is creatting

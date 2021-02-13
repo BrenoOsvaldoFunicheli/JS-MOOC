@@ -24,6 +24,7 @@ console.log(last_name, humor)
 
 //  nested  destructuring 
 const { adress: { number, cep } } = person
+console.log('nu')
 console.log(number, cep)
 
 //  you can't try access nested values that you doesn't has certain if there is.
@@ -59,6 +60,8 @@ function rand({ min = 0, max = 1000 }) {
     return Math.floor(value)
 }
 
+
+console.log('Order is important')
 console.log(rand({ max: 50, min: 40 }))
 
 const obj = { max: 50, min: 100 }

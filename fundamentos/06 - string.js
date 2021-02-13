@@ -28,8 +28,8 @@ console.log('Ana,Maria,Marta'.split(/,/))
 console.log(`Eii.... `)
 
 // simple use
-const name = 'Rebeca'
-const template =  `Olá ${name}` 
+const name_ = 'Rebeca'
+const template =  `Olá ${name_}` 
 console.log( template)
 
 // interpolation
@@ -39,4 +39,4 @@ console.log(`1+1 = ${1+1}`)
 // Elo Function
 const up = text => text.toUpperCase()
 
-console.log(`${up(name)}`)
+console.log(`${up(name_)}`)

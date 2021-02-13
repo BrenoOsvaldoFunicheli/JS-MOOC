@@ -26,6 +26,8 @@ f3()
 const person = {
     greeting: 'Hello',
     talk() {
+        // if you don't use this.
+        // it will throw an error
         console.log(this.greeting)
     }
 }

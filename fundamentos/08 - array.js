@@ -1,5 +1,4 @@
 // Estrutura linear de armazenamento
-
 const lst_vl = [1, 2, 4, 5.5]
 
 console.log(lst_vl)
