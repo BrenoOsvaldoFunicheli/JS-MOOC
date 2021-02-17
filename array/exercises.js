@@ -50,10 +50,11 @@ const firstAndLast = function (array) {
 console.log(firstAndLast([1, 2, 3, 4, 54]))
 
 function RemoveProperty(obj, property) {
-    new_obj = Object.create(obj) // this method use obj as a protoype
-    // new_obj = Object.assign({}, obj) // this method clone all properties of obj to first object
+    // new_obj = Object.create(obj) // this method use obj as a protoype
+    new_obj = Object.assign({}, obj) // this method clone all properties of obj to first object
 
     delete new_obj[property]
 
     return new_obj
 }
+
