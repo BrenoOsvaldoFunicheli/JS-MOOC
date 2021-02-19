@@ -96,3 +96,8 @@ function ThrowErrorOnCatch(seconds, pharse) {
 talkAfter(3, 'Que legal')
     .then((e, two) => console.log('1: ' + e + ' 2: ' + two))
     .catch(e => console.log('In this case, pharse was passed to reject function, on the promise definition, that returns value to catch function. That is calling on promise object'))
+
+    
+    // come back to promise 01
+
+    
