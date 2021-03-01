@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>Exe</header>
+    <nav>
+        <!-- // href attr keep on the link state -->
+        <a href wm-attr="exercise/teste.html">First Content </a><span>|</span>
+        <a href wm-attr="exercise/teste2.html">Seconde Clickable </a> <span>|</span>
+        <a href wm-attr="exercise/text_tag.html">3º class</a> <span>|</span>
+        <a href wm-attr="exercise/text_tag2.html">4º Tags 2 part</a> <span>|</span>
+        <a href wm-attr="exercise/06-links.html">6º link</a> <span>|</span>
+        <a href wm-attr="exercise/07-table.html">7º table</a> <span>|</span>
+        <a href wm-attr="exercise/08-forms2.html">8º Forms</a> <span>|</span>
+        <a href wm-attr="exercise/09-images.html">8º Image</a> <span>|</span>
+        <a href wm-attr="exercise/10-video.html">10º Video</a> <span>|</span>
+        <a href="exercise/teste2.html">Go to</a>
+    </nav>
+    <section id="content">
+
+    </section>
+    <footer>Cod3r</footer>
+
+    <script>
+        list_of_a = document.querySelectorAll('[wm-attr]')
+
+
+        list_of_a.forEach(link => {
+            const content = document.getElementById('content')
+
+            link.onclick = function (e) {
+                e.preventDefault()
+
+                // fetch(link.href) example that get simple attr
+
+                fetch(link.getAttribute('wm-attr'))
+                    .then(resp => resp.text())
+                    .then(html => content.innerHTML = html)
+            }
+        });
+
+    </script>
+</body>
+
+</html>

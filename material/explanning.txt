@@ -1,0 +1,3 @@
+é importante ressaltar que diferentes seletores tem diferentes níveis de performance:
+
+exemplo id é muito mais rápido do que outros attributos personalizados

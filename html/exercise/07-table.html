@@ -1,0 +1,57 @@
+<!-- colspan number of columns
+border style of the table -->
+
+<table>  <!-- border="1" -->
+    <caption>Products</caption>
+    <thead>
+       <tr><!-- table row -->
+           <th>Product</th> <!--Table head -->
+           <th>Price</th>
+           <th>Quantity</th>
+           <th>Total</th>
+       </tr> 
+    </thead>
+    <tbody>
+        <tr>
+            <td>IPAD</td>
+            <td>100</td>
+            <td>6</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>IPAD</td>
+            <td>900</td>
+            <td>6</td>
+            <td>5400</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">Total</td>
+            <td>6000</td>
+        </tr>
+    </tfoot>
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td{
+        /* both are into a tr (table row) */
+        padding: 10px;
+    }
+
+    thead tr{
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover{
+        background-color: #dedede;
+    }
+
+    td,th{
+        border: solid 1px #000;
+    }
+</style>

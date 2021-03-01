@@ -1,0 +1,69 @@
+<h1>Forms</h1>
+<form action="" method="POST">
+    <input type="text" name="t">
+    <input type="password" name="senha" id="senha">
+    <textarea name="tearea" id="tearea" cols="30" rows="10"></textarea>
+
+
+    <!-- 1. RADIO, SELECT -> DON'T SEND [LABEL] VALUE, THEY SEND VALUE ON [ATTRIBUTE VALUE]  -->
+    <!-- 2. THEY NOT SEND DATA IF NOT SELECT -->
+    <div>
+        <!-- The sended value will be what stood on value property -->
+        <!--if you don't put any value it won't send-->
+        <input type="radio" name="type" value="ol1">Admin
+        <input type="radio" name="type" value="ol2">Regular
+        <input type="radio" name="type" value="ol3">Regular
+    </div>
+
+    <div>
+        <!--if you don't put any value it won't send-->
+        <input type="checkbox" name="checkme" id=""> Ativo
+    </div>
+
+
+
+
+    <div>
+        
+         <!-- IT HAS THE SAME NAME ON SELECT COMPONENT  -->
+        <select name="NomeForAll" id="">
+            <!--if you don't put any value it will send text label -->
+            <option >No value</option> 
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <optgroup aria-valuetext="Group">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <div>
+        <select name="inter" multiple size="5" id="">
+            <option value="1">java1</option>
+            <option value="2">java2</option>
+            <option value="3">java3</option>
+            <option value="4">java4</option>
+            <option value="5">java5</option>
+        </select>
+    </div>
+
+    <!-- SET multiple FORM  ACTION -->
+    <button formaction="page1.com" formmethod="GET">incluir</button>
+    <button formaction="page12.com/2">incluir</button>
+</form>
+
+<style>
+    input,
+    textarea {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input[type='radio'],
+    input[type='checkbox'] {
+        display: inline;
+    }
+</style>

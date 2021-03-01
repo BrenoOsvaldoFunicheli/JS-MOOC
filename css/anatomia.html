@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .selector {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+
+            /* multiple values */
+            /* shorthand property*/
+            border: solid 5px navy;
+
+            font-family: Helveltico, sans-serif;
+
+            /* functions on css */
+            width: calc(100%-30px);
+            background-color: rgb(34, 153, 189);
+
+        }
+
+
+        /* psedo class */
+        /* aplica estilos para determinados estados */
+        .selector:hover {
+            /* pattern is dotted separed */
+            background-color: orange;
+        }
+
+        /* um elemento que de fato não existe, porém, que pode ser obtido */
+        .selector::first-letter {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        /* class names are case sensitive */
+        /* elements aren't sensitive, but class are sensitive */
+
+        /* dash-case or camelcase */
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>

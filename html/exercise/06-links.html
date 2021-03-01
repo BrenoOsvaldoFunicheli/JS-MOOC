@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- abslute URL  -->
+    <a href="https://tagging.turivius.com/projects/17/text-classification?isChecked=false&page=1"> Google 1</a>
+    <a href="https://tagging.turivius.com/projects/17/text-classification?isChecked=false&page=1" target="_blank">
+        Google 2</a>
+
+    <!-- If you don't put the www prefix you get an error -->
+    <a href="tagging.turivius.com/projects/17/text-classification?isChecked=false&page=1" target="_blank"> Google 3</a>
+
+    <div id="ancor">
+        <h1>Here, it's Ancor (#)</h1>
+    </div>
+
+    <ol>
+
+        <li>
+            Server site by html folder with http-server
+            <ol>
+                <li>
+                    direct Access
+                    <ol>
+                        <li>Fail</li>
+                        <li>Success, because of it access root link</li>
+                        <li>Success, because of it access previous folder</li>
+                    </ol>
+                </li>
+                <li>
+                    Access by index (Ajax)
+                    <ol>
+                        <li>Success, because you are at html forlder where there is index.html file</li>
+                        <li>Sucess, because your are accessing by root folder</li>
+                        <li>Semi-Sucess, because it go to root folder, but you don't have previous folder(if it go back it can be security
+                            problem)</li>
+                    </ol>
+                </li>
+            </ol>
+
+        </li>
+    </ol>
+
+    <!-- relative URL -->
+    <a href="index.html"> voltar 1</a>
+    <a href="/index.html"> voltar 2</a>
+    <a href="../index.html"> voltar 3</a>
+
+    <br>
+    <br>
+    <!-- Email link link -->
+    <a href="mailto:brenoosvaldo@gmail.com">Link To Email</a>
+
+    <!-- absolute link -->
+    <!-- tip -->
+    <!-- how to create link with class and id -->
+
+    <div id="notice" style="position: absolute;top: 2000px;">
+        <h1>This notice will be apper on the bottom of the page</h1>
+        <p>It's nothing</p>
+        <!-- link to top of the page -->
+        <a href="#ancor">Top</a>
+    </div>
+
+    <a href="#notice">This link points to div notice</a>
+</body>
+
+</html>
