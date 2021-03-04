@@ -7,6 +7,149 @@
     <link rel="stylesheet" href="css/tag.css">
     <style>
         /* ... */
+       /*         
+        * {
+            // universal seletor 
+            color: red;
+            background-color: yellow;
+        }  */
+        /* ---------------------- */
+        /* 
+        Class selector
+
+        .tag{
+            color:green;
+            background-color: red;
+        } */
+
+        /* ------------------------------ */
+        /* id -sel
+
+        #aprovado {
+            color: antiquewhite;
+            background-color: brown;
+        } */
+        
+        
+        /* ------------------------------- */
+        /* direct child */
+
+        /* some elements inherit style */
+        /* following code select first div child  */
+        /* #aninhado > div {
+            color: aqua;
+            background-color: blue;
+        } */
+
+        /* following code not select any element, 
+        because there aren't  section directly inside of 
+        element with id aninhado */
+        /* #aninhado > section {
+            color: aqua;
+            background-color: blue;
+        } */
+
+        /* Descendent Selector */
+
+        /* Apply style at all elements inside of element
+        with aninhiado id, same that they aren't directly
+        childs */
+        /* #aninhado  section {
+            color: aqua;
+            background-color: blue;
+        } */
+        /* -------------------------------------------------- */
+
+
+        /* Brother selector */
+
+        /* apply style to uls are afte of p elements */
+        /* p + ul {
+            color: aqua;
+            background-color: blue;   
+        } */
+
+        /* -------------------------------------------------- */
+
+
+        /* General sibling selector */
+
+        /* apply style to uls are inside same level of p elements */
+        /* p ~ ul {
+            color: aqua;
+            background-color: blue;   
+        } */
+        
+
+        /* -------------------------------------------------- */
+
+        /* Attr Selector */
+
+        /* apply style to all elements taht have feira attribute */
+        /* [feira] {
+            color: aqua;
+            background-color: blue;   
+        } */
+
+        /* apply style to all elements that feira attribute has escritorio value */
+        /* In this case it's need note that any value has this value inside
+        of feira attr */
+        /* [feira=escritorio] {
+            color: aqua;
+            background-color: blue;   
+        } */
+        
+        /* 
+        As one of elements have escritorio and other values
+        you need put ~= selector, that will get all
+        values SPACE SEPARED */
+
+
+        /* pattern text */
+
+        /* this code will be get any value that contains
+        sa string */
+        /* [feira*=sa]{
+
+        } */
+        /* ------------------------------------------------------------ */
+
+        /* first child */
+        /* to our example the first element is label */
+
+        /* The counter start with number 1 */
+
+        /* :nth-child(1){
+            
+        } */
+
+
+        /* odd and even child */
+        /* ODD */
+        /* :nth-child(odd){
+            
+        } */
+
+        /* EVEN */
+        /* :nth-child(even){
+            
+        } */
+        /* ------------------------------------------------------------ */
+
+        /* Multiple element selectors */
+
+        /* ul, ol {
+            color:red;
+            background-color: yellow;
+        } */
+
+        /* ----------------------------------------------------------------- */
+
+        /* Second span */
+        span:nth-of-type(1){
+
+        }
+
     </style>
 </head>
 

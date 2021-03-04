@@ -5,7 +5,41 @@
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
     <style>
-        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* 
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity 
+        */
+
+/* 
+        ordem de especificidade
+
+        1. !important 
+        2. seletores mais específica
+        3. mesma prioridade é resolvida pela ordem de processamento 
+        */
+
+        p{
+            background-color: #aaa;
+        }
+
+
+        /* Esse seletor é mais específico, portanto a ordem não importa */
+        p.observacao{
+            padding: 20px;
+        }
+
+
+        .observacao {
+            /* background é diferente de backgroundcolor */
+            background-color: #555;
+            border: dashed 5px;
+            
+            /* important burla todas as regras */
+            padding: 20 px !important; 
+
+            font-size: 40px;
+        }
+
+        
     </style>
 </head>
 

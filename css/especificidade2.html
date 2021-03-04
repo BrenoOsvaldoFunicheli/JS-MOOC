@@ -5,7 +5,59 @@
     <meta charset="UTF-8">
     <title>Especificidade CSS</title>
     <style>
-        /* https://specificity.keegan.st/ */
+        /* 
+        https://specificity.keegan.st/ 
+        */
+
+        /* 
+        1. Inline
+        2. IDs
+        3. Classes, attributes and pseudo-classes
+        4. Elements and pseudo-elements
+     */
+
+
+        body {
+            font-size: 40px;
+        }
+
+        /* menor nível de especificidade */
+        div {
+            background-color: #00b;
+            color: #fff;
+        }
+
+        /* -----------------------------------------------------------------*/
+        /* Os tres próximos tem o mesmo nível de especificidade */
+        /* nível maior de especificidade */
+
+        div[wm-cor] {
+            background-color: darkorange;
+        }
+
+        /* O hover tem igual especificidade  ao de cima, portanto
+        caso você o coloque antes, o efeito não será aplicado */
+        div:hover {
+            background-color: purple;
+        }
+
+        /* tem o mesmo nível de especificidade */
+        div.estilo {
+            background-color: green;
+        }
+
+        /* -----------------------------------------------------------------*/
+
+        /* O hover não irá pegar nesses elementos */
+        #unico1, #unico2{
+            background-color: black;
+        }
+
+        /* Para o hover pegar nesse elemento é necessário que você seja especifico sobrer o id */
+        #unico1:hover{
+            background-color: red;
+        }
+
     </style>
 </head>
 

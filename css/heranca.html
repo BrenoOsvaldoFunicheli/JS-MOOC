@@ -6,11 +6,39 @@
     <title>Herança</title>
     <style>
         /* ... */
+
+        body {
+            /* This property is inherit */
+            font-family: monospace; 
+            
+            /* This property is inherit */
+            font-size: 40px;
+
+            /* The following property aren't inherit */
+            border: solid 3px red;
+            padding: 50px;
+
+        }
+
+        div {
+            /* Here we inherit properties */
+
+            /* Cascading style sheet */
+            border: inherit;
+            padding: inherit;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1>Herança</h1>
+    
+    <!-- inline style apper as a element.style on devtools -->
+
+    <!-- <h1 style="background-color: green;"> Herança</h1> -->
+
+    <h1> Herança</h1>
+
     <div>Estou herdando</div>
 </body>
 
